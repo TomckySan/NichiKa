@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NichiKa（ニチカ）| 二値化処理のためのサービス</title>
-  <meta name="description" content="NichiKa（ニチカ）は画像の二値化処理を行うためのサービスです">
+  <title>NichiKa | A tool for binarizing images.</title>
+  <meta name="description" content="NichiKa is a tool for binarizing images.">
   <meta name="author" content="tomcky">
-  <meta property="og:title" content="NichiKa（ニチカ）| 二値化処理のためのサービス">
-  <meta property="og:description" content="NichiKa（ニチカ）は画像の二値化処理を行うためのサービスです">
+  <meta property="og:title" content="NichiKa | A tool for binarizing images.">
+  <meta property="og:description" content="NichiKa is a tool for binarizing images.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tomckysan.github.io/NichiKa/">
   <meta property="og:image" content="https://tomckysan.github.io/NichiKa/dist/assets/images/ogp.jpg">
   <meta property="og:site_name" content="NichiKa">
   <meta name="twitter:card" content="summary">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="dist/assets/styles/index.min.css">
+  <link rel="stylesheet" href="../dist/assets/styles/index.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
 </head>
@@ -44,10 +44,10 @@
     <div class="mainBackground">
       <div class="mainContent">
         <h1 class="mainContent_title">
-          <a href="https://tomckysan.github.io/NichiKa/">NichiKa</a>
+          <a href="https://tomckysan.github.io/NichiKa/en/">NichiKa</a>
         </h1>
-        <h2 class="mainContent_description">
-          NichiKa（ニチカ）は<br>画像の二値化処理を行うためのサービスです<br>
+        <h2 class="mainContent_description en">
+          NichiKa is a tool for binarizing images.
         </h2>
         <div class="mainContent_images">
           <div class="swiper-container">
@@ -55,30 +55,30 @@
               <div class="swiper-slide">
                 <div class="flex show">
                   <div>
-                    <img class="mainContent_images_origin" src="dist/assets/images/sample_origin_1.jpg" alt="NichiKaサンプル画像">
+                    <img class="mainContent_images_origin" src="../dist/assets/images/sample_origin_1.jpg" alt="">
                   </div>
                   <div>
-                    <img class="mainContent_images_binarized" src="dist/assets/images/sample_binarized_1.jpg" alt="NichiKaサンプル画像">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex show">
-                  <div>
-                    <img class="mainContent_images_origin" src="dist/assets/images/sample_origin_2.jpg" alt="NichiKaサンプル画像">
-                  </div>
-                  <div>
-                    <img class="mainContent_images_binarized" src="dist/assets/images/sample_binarized_2.jpg" alt="NichiKaサンプル画像">
+                    <img class="mainContent_images_binarized" src="../dist/assets/images/sample_binarized_1.jpg" alt="">
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="flex show">
                   <div>
-                    <img class="mainContent_images_origin" src="dist/assets/images/sample_origin_3.jpg" alt="NichiKaサンプル画像">
+                    <img class="mainContent_images_origin" src="../dist/assets/images/sample_origin_2.jpg" alt="">
                   </div>
                   <div>
-                    <img class="mainContent_images_binarized" src="dist/assets/images/sample_binarized_3.jpg" alt="NichiKaサンプル画像">
+                    <img class="mainContent_images_binarized" src="../dist/assets/images/sample_binarized_2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex show">
+                  <div>
+                    <img class="mainContent_images_origin" src="../dist/assets/images/sample_origin_3.jpg" alt="">
+                  </div>
+                  <div>
+                    <img class="mainContent_images_binarized" src="../dist/assets/images/sample_binarized_3.jpg" alt="">
                   </div>
                 </div>
               </div>
@@ -88,9 +88,9 @@
         </div>
         <div class="mainContent_controlPannel">
           <div class="thresholdRange">
-            <span class="thresholdRange_label">明るくする</span>
+            <span class="thresholdRange_label en">Brighter</span>
             <input class="thresholdRange_input" type="range" name="threshold" min="30" max="250" step="1" value="60">
-            <span class="thresholdRange_label">暗くする</span>
+            <span class="thresholdRange_label en">Darker</span>
           </div>
           <div class="selectionColors">
             <div class="btn black"></div>
@@ -109,21 +109,21 @@
             <div class="btn gray"></div>
           </div>
           <div class="download">
-            <a download="nichika_binarized.jpg" class="downloadLink" href="#">2値化した画像をダウンロード</a>
-            <p class="download_comment">
-              スマートフォンの方は画像長押しで保存してください
+            <a download="nichika_binarized.jpg" class="downloadLink" href="#">Download Binarized</a>
+            <p class="download_comment en">
+              Using smartphones, <br>save with 'touch and hold' an image.
             </p>
           </div>
         </div>
         <div class="mainContent_fileSelection">
-          <div class="mainContent_fileSelection_btn">
+          <div class="mainContent_fileSelection_btn en">
             <label for="selectfile">
-              画像を選択する
+              Select an Image
               <input type="file" id="selectfile" accept="image/*">
             </label>
           </div>
-          <p class="mainContent_fileSelection_comment">
-            画像がサーバーに保存される<br>ことはありません
+          <p class="mainContent_fileSelection_comment en">
+            Images will never be stored<br>on the server.
           </p>
         </div>
       </div>
@@ -131,25 +131,25 @@
 
     <footer>
       <div class="footerContetnt">
-        <div class="tos">
-          動作確認済みブラウザ<br>
+        <div class="tos en">
+          Work with <br>
           Google Chrome, Mozilla Firefox, Safari
         </div>
         <div class="myicon">
-          <a target="_blank" href="https://twitter.com/tomcky_san"><img src="dist/assets/images/myicon.jpg" alt="Tomcky"></a>
+          <a target="_blank" href="https://twitter.com/tomcky_san"><img src="../dist/assets/images/myicon.jpg" alt=""></a>
         </div>
         <div class="producedBy">Produced by <a target="_blank" href="https://twitter.com/tomcky_san">Tomcky</a></div>
       </div>
     </footer>
   </div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-  <script type="text/javascript" src="dist/assets/scripts/main.min.js"></script>
+  <script type="text/javascript" src="../dist/assets/scripts/main.min.js"></script>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
   <script>
